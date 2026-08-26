@@ -541,7 +541,7 @@
 blitted into a <code>&lt;canvas&gt;</code>, and hosted in a <strong>WKWebView</strong> that is opened from Go
 with <strong>zero cgo</strong> (<code>CGO_ENABLED=0</code>). Module path <code>github.com/go-reddit/reader</code>.</p>
 <h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─ &quot;Reddit Reader.app&quot;  (pure Go, CGO=0, self-contained) ───────────────┐
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─ "Reddit Reader.app"  (pure Go, CGO=0, self-contained) ───────────────┐
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│                                                                        │
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   internal/ui        go-widgets toolkit renders the feed → RGBA buffer │
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   cmd/front  (wasm)  blits that buffer into a browser &lt;canvas&gt;         │
